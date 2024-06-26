@@ -2,7 +2,7 @@ const express = require('express');
 const books = require('./booksdb.js');
 const public_users = express.Router();
 
-// Get all books
+// Get all book
 public_users.get('/', async (req, res) => {
     try {
         res.json(Object.values(books));
